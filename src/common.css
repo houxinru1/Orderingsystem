@@ -1,0 +1,19 @@
+/* 清空默认样式 */
+body,h1{
+    margin: 0;
+    padding: 0;
+}
+input{
+    border: none;
+    outline: none;
+}
+/* 公共样式 */
+.icon{
+ width: 2.6rem;
+ height: 2.6rem;
+}
+.wrap{
+    width: 32.7rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
