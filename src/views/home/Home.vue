@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="home-header wrap">
-      <img class="icon" src="../../assets/imgs/icon_left arrow.png" alt="" />
+      <img class="icon" src="../../assets/imgs/icon_left-arrow.png" alt="" />
       <h1>首页</h1>
       <div class="icon"></div>
     </div>
@@ -53,6 +53,7 @@
           <div class="screen-m">Moblie screen sharing to TV</div>
         </div>
       </div>
+      
       <div class="last wrap">
         <div class="time">
           <img class="icon" src="../../assets/imgs/icon_suspend.png" alt="" />
@@ -71,6 +72,19 @@
     </div>
   </div>
 </template>
+
+<script>
+import FormItem from "../userCenter/Login/components/FromItem.vue";
+export default {
+  data() {
+    
+  },
+  components:{
+FormItem
+  }
+}
+</script>
+
 <style scoped>
 .home {
   min-height: 100vh;
@@ -210,20 +224,18 @@
 .last {
   margin-top: 3rem;
   display: flex;
-  align-items: center;
-  gap: 0 6rem;
+justify-content: space-evenly
 }
 .time,
 .end {
-  padding: 1rem 2rem;
+  width: 13.4rem;
+  height: 4.4rem;
   font-size: 1.5rem;
   border-radius: 2rem;
   background-color: #fffffd;
   display: flex;
-  box-sizing: border-box;
-  white-space: nowrap;
   align-items: center;
-  text-align: center;
+  justify-content: center
 }
 ::-webkit-scrollbar {
   display: none;

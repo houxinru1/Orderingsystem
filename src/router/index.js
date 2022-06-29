@@ -7,6 +7,7 @@ const routes=[
     },
     {
         path:'/home',
+        
         name:'Home',
         component:Home
     },
@@ -25,8 +26,12 @@ const routes=[
 ]
 
 const router = createRouter({
+    // 官方提示 hash比较简单
     // 4. 内部提供了 history 模式的实现。为了简单起见，我们在这里使用 hash 模式。
-    history: createWebHashHistory(),
+    // cteate:创建
+    // web 浏览器
+    //  hash  哈稀
+    history: createWebHashHistory(),    ////cteateWebHistory（）
     routes, // `routes: routes` 的缩写
   })
 
